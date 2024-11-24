@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> <!-- Cabeçalho -->
+    <meta charset="UTF-8">
+    <title>Camila Beauty</title>
+    <link rel="stylesheet" href="style.css"> <!-- Chamando o css no nosso site -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <img id="logo" src="imagens/logo.png" alt="Logo Camila Beauty"> <!-- Logo Camila e cabeçalho do site -->
+                    <ul>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#objetivo">Objetivo</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="contato.html">Contatos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Conteúdo do site, primeira parte pós cabeçalho -->
+            <section id="sobre"> 
+                <h1>Sobre</h1>
+                <p>
+                    Os nossos procedimentos estimulam o autocuidado, elevam a autoestima, e oferecem praticidade no dia
+                    a dia, além disso, visamos trabalhar com as melhores técnicas e produtos de altíssima qualidade para
+                    resultados impecáveis.
+                </p>
+                <hr>
+                <div class="slideshow">
+                    <img src="imagens/sobre/sobre2.jpeg" alt="Pigmentação da sobrancelha">
+                    <img src="imagens/sobre/sobre5.jpeg" alt="Mulher se olhando no espelho">
+                    <img src="imagens/sobre/sobre8.jpeg" alt="Mulher se olhando no espelho">
+                </div>
+            </section> <!-- Fim do sobre -->
+
+            <!-- Segunda parte pós cabeçalho -->
+            <section id="objetivo">
+                <h1>Objetivo</h1>
+                <p>
+                    A empresa Camila Beauty tem o objetivo de realçar a beleza de mulheres de forma única e
+                    personalizada, sempre com muita qualidade e sofisticação.
+                    Através dos procedimentos conseguimos transformar a vida de mulheres que estão dispostas a ter uma
+                    nova versão de si, seja com o autocuidado, ou se desenvolvendo para uma nova profissão.
+                </p>
+                <hr>
+                <div class="slideshow">
+                    <img src="imagens/objetivo/objetivo1.jpg" alt="Camila Ensinando">
+                    <img src="imagens/objetivo/objetivo2.jpg" alt="Mulher se olhando no espelho">
+                    <img src="imagens/objetivo/objetivo3.jpg" alt="Mulher com certificado">
+                </div>
+            </section> <!-- Fim do objetivo -->
+
+            <!-- Terceira parte pós cabeçalho -->
+            <section id="servicos">
+                <h1>Nossos serviços</h1>
+                <p>
+                    Serviços que realizamos:
+                </p>
+                <hr>
+                <div class="carousel-container">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button> <!-- Imagem se move ao clicar no botão -->
+                    <div class="carousel">
+                        <img src="imagens/servicos/brow.jpeg" alt="Brow Lamination">
+                        <img src="imagens/servicos/design.jpeg" alt="Design com Coloração">
+                        <img src="imagens/servicos/designpersonalizado.jpeg" alt="Design Personalizado">
+                        <img src="imagens/servicos/extensao.jpeg" alt="Extensão de Cílios">
+                        <img src="imagens/servicos/lash.jpeg" alt="Lash Lifting">
+                        <img src="imagens/servicos/nanopigmentacao.jpeg" alt="Nanopigmentação">
+                        <img src="imagens/servicos/nanorepair.jpeg" alt="Nano Repair">
+                        <img src="imagens/servicos/despigmen.jpeg" alt="Despigmentação e Micropigmentação">
+                    </div>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button> <!-- Imagem se move ao clicar no botão -->
+                </div> <!-- Fim do nossos serviços -->
+        </main>
+        <footer> <!--Rodapé do site-->
+        <br><p> CAMILA BEAUTY © 2024. All rights reserved. </p><br> <!-- Direitos autorais -->
+        </footer> <!-- Fim do rodapé -->
+        </div>
+        <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+    </body>
+</html>

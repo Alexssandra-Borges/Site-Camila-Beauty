@@ -1,0 +1,250 @@
+html {
+    margin: 0; /* Zera o html */
+    padding: 0; /* Zera o html */
+    scroll-behavior: smooth; /* Adiciona rolagem suave */
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /* Zera o body */
+    padding: 0; /* Zera o body */
+    background-color:  #ffffff;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+
+/* Navbar */
+nav {
+    position: relative;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid #CCC;
+    background-color: #cdb199;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav-container ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container li {
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    transition: 0.5s;
+}
+
+.nav-container li a:hover {
+    color: #fff5d3f0; /* Cor dos botões pós passar o mouse */
+} 
+
+#logo {
+    float: left;
+    height: 100px;
+    width: auto;
+}
+
+
+main {
+    padding-top: 0; /* Remover padding-top do main */
+    max-width: 1150px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+/* Adiciona padding-top às seções para compensar o cabeçalho fixo */
+section {
+    padding-top: 100px; /* Alinha o conteúdo da seção ao topo */
+}
+
+main h1 {
+    color: #a5998d;
+    font-weight: 600;
+    font-size: 1.7em;
+}
+
+main p {
+    line-height: 25px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #a5998d;
+}
+
+main img {
+    margin: 20px 0px;
+    width: 600px;
+    height: 337,5px;
+    border-radius: 15px;
+}
+
+.imagem {
+    text-align: center;
+}
+
+/* Estilos para o slideshow */
+.slideshow {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: fade 12s infinite;
+}
+
+.slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slideshow img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+
+@keyframes fade {
+    0%, 33% {
+        opacity: 0;
+    }
+    8%, 25% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color:  #cdb199; /* Cor de fundo do rodapé */
+}
+
+footer > p {
+    margin: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+} /* Posição texto do rodapé */
+
+
+#textInsta{
+    text-decoration: none;
+    color: #a5998d;
+}
+
+#textInsta:hover{
+    color: #cdb199;
+    transition: 0.5s;
+}
+
+#insta{
+    width: 70px;
+    height: 70px;
+    margin-left: -120px;
+}
+
+#textWhats{
+    text-decoration: none;
+    color: #a5998d;
+    margin-left: 70px;
+}
+
+#textWhats:hover{
+    color: #cdb199;
+    transition: 0.5s;
+}
+
+#whats{
+    width: 70px;
+    height: 70px;
+    margin-left: -100px;
+}
+
+/* Estilos gerais para o container do carrossel */
+.carousel-container {
+    position: relative;
+    width: 85%; /* Largura do carrossel */
+    margin: 0 auto;
+    overflow: hidden; /* Esconde as imagens que estão fora da área visível */
+}
+
+/* Estilos para as imagens do carrossel */
+.carousel {
+    display: flex; /* Organiza as imagens horizontalmente */
+    transition: transform 0.5s ease; /* Transição suave para o movimento das imagens */
+}
+
+.carousel img {
+    width: 300px; /* Tamanho das imagens */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px; /* Espaçamento entre as imagens */
+    border: 1px solid #a5998d; 
+    position: relative;
+}
+
+/* Estilos para os botões de navegação (setas) */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000080;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos para os botões de navegação quando o mouse passa sobre eles */
+.prev:hover, .next:hover {
+    background-color: #000000cc;
+}
